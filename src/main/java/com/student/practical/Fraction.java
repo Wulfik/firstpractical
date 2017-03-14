@@ -41,26 +41,32 @@ public class Fraction {
     }
 
     public int getNumerator() {
+
         return numerator;
     }
 
     public int getDenominator() {
+
         return denominator;
     }
 
     public String toString() {
+
         return numerator + "/" + denominator;
     }
 
     public double toDouble() {
+
         return (double) numerator / denominator;
     }
 
     public boolean isProper() {
+
         return Math.abs(numerator) < denominator;
     }
 
     public Fraction inverse() {
+
         return new Fraction(denominator, numerator);
     }
 
