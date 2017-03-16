@@ -41,11 +41,10 @@ public class FractionTest {
         Assert.assertEquals (("-5/7"), new Fraction(5,-7).toString());
            }
 
-    /*@Test
-    public double test_double_doubleResult () {
-        Assert.assertEquals(0.5,new Fraction(2,4).toDouble());
-    } Намагався зробити, но чомусь постійно мені assertEquals починає перекреслювати якщо пишу значення. Це останній
-    з варіантів як я намагався реалізувати, попередні також неадалі*/
+    @Test
+    public void test_double_doubleResult () {
+        Assert.assertEquals(0.5,new Fraction(2,4).toDouble(),0.0000001);
+    }
 
 
     @Test
